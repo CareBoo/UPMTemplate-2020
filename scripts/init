@@ -33,6 +33,6 @@ find . -type f -name "*.md" -exec bash -c 'mv "$2" "${2/__MyPackage__/$1}"' -- $
 find . -type f -name "*.md.meta" -exec bash -c 'mv "$2" "${2/__MyOrganization__/$1}"' -- ${ORGANIZATION_PASCAL} {} \;
 find . -type f -name "*.md.meta" -exec bash -c 'mv "$2" "${2/__MyPackage__/$1}"' -- ${PACKAGE_PASCAL} {} \;
 
-mv com.__my-organization__.__my-package__ com.${ORGANIZATION_KEBAB}.${PACKAGE_KEBAB}
+mv com._my-organization__.__my-package__ com.${ORGANIZATION_KEBAB}.${PACKAGE_KEBAB}
 
 cd -
