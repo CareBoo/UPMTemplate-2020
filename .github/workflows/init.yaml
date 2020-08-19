@@ -32,8 +32,8 @@ jobs:
           PACKAGE_PASCAL: ${{ github.event.inputs.packagePascal }}
           PACKAGE_KEBAB: ${{ github.event.inputs.packageKebab }}
         run: |
-          ./init
-          rm init
+          ./scripts/init
+          rm ./scripts/init
           rm .github/workflows/init.yaml
       
       - name: Commit Changes

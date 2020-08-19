@@ -12,22 +12,22 @@
       "@semantic-release/changelog",
       {
         "preset": "angular",
-        "changelogFile": "<PACKAGE_DIR>/CHANGELOG.md"
+        "changelogFile": "Packages/com.__my-organization__.__my-package__/CHANGELOG.md"
       }
     ],
     [
       "@semantic-release/npm",
       {
         "npmPublish": false,
-        "pkgRoot": "<PACKAGE_DIR>"
+        "pkgRoot": "Packages/com.__my-organization__.__my-package__"
       }
     ],
     [
       "@semantic-release/git",
       {
         "assets": [
-          "<PACKAGE_DIR>/package.json",
-          "<PACKAGE_DIR>/CHANGELOG.md"
+          "Packages/com.__my-organization__.__my-package__/package.json",
+          "Packages/com.__my-organization__.__my-package__/CHANGELOG.md"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
