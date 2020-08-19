@@ -32,7 +32,7 @@ jobs:
           key: Library-${{ matrix.unityVersion }}
           restore-keys: |
             Library-
-      - runs: ./scripts/coverageAssemblyFilters
+      - run: ./scripts/coverageAssemblyFilters
         id: assemblyFilters
       - uses: webbertakken/unity-test-runner@v1.6
         id: tests
