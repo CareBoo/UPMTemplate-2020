@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+npm publish --access=public --registry=https://npm.pkg.github.com/@__my-organization__ Packages/com.__my-organization__.__my-package__
